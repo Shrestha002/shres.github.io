@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+:root{
+    --main-bg-color: rgb(134, 9, 172);
+}
+*{
+    margin: 0;padding: 0;
+    overflow: inherit;
+}
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Padauk', sans-serif;
+}
+.name{
+    color: #f1d5f9;
+    align-items: center;
+    margin: 0px 54px 0px 30px;
+    font-family: 'Allison', cursive;
+    font-size: 34px;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    padding: 0px 40px;
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;   /*vertical alignment */
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 15px;
+}
+nav ul li a:hover{
+    color: rgb(97, 16, 73);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+.searchbar input{
+    width: 695px;
+    height: 32px;
+    border-radius: 5px;
+    margin: 0px 10px 0px 156px;
+    padding: 0px 12px;
+}
+.slider{
+    width: 80vw;
+    margin: 12px auto;
+}
+.container{
+    min-height: calc(100vh - 35px - 30px);    /* makes the height of the entire page 100 vh including the header and footer */
+    background-color: rgba(147, 90, 194, 0.349);
+}
+.cart{
+    background-color:rgba(255, 255, 255, 0.767);
+    max-width: 1800px;
+    margin: 40px 12px;
+    border: 1px solid black;
+}
+.cart h2{
+    font-family: 'Lobster', cursive;
+    margin: 24px 20px;
+    color: #5d3a68;
+}
+.cartitems{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10vw;
+    margin: 5px auto;
+    align-items: center;
+    border: 1px solid;
+}
+footer{
+    height: 60px;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Padauk', sans-serif;
+}
